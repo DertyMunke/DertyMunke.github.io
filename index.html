@@ -3,79 +3,175 @@
 <Style>
 
 body { 
-  	background: url(images/me1.png) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+  	background: url(images/home/me1.png) no-repeat center left fixed; 
   	background-size: cover;
 }
 
-div#banner { 
-	min-width: 800px;
-	position: absolute; 
-   	top: 20; 
-   	left: 0; 
-   	background-image:url(images/light_blue.png); 
-   	width: 100%; 
-   	height: 80px;
-}
-
-div#banner-content { 
-	min-width: 800px;
-	text-align: right;
-   	width: 100%; 
-   	border: none;
-   	height: 60px;
-}
-
-div#main-content { 
-	font-family: Consolas;
-	min-width: 800px;
-   	padding-top: 70px;
-   	padding-left: 30%;
-   	position: absolute;
-   	font-size: 30px;
-   	color: white;
-}
-
-
 </Style>
 	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="images/sunset.ico" />
 		<meta charset="ISO-8859-1">
 		<title>Joel's Home</title>
+		<link rel="stylesheet" type="text/css" href="topbanner.css" media="screen" />
+		<script src="scripts.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<div id="banner">
-  			<div id="banner-content">
-				<a href="unity.html">
-					<img src="images/owl.png" alt="Games" height="72px" width="72px" border="thin solid white" align="top" style="padding-right:40px;">
-				</a>
-				<a href="unity.html">
-					<img src="images/tools.png" alt="Games" height="75px" width="75px" border="thin solid white" align="top" style="padding-right:40px;">
-				</a>
-				<a href="unity.html">
-					<img src="images/controller.png" alt="Tools" height="101px" width="101px" border="thin solid white" align="top" style="padding-right:40px;">
-				</a>	
-				<a href="unity.html">
-					<img src="images/cap.png" alt="Tools" height="100px" width="100px" border="thin solid white" align="top" style="padding-right:40px;">
-				</a>			
-  			</div>
-			<div id="main-content">
-			  	<div>
-			  		<p>
-			  			public void JoelAbney::aboutMe()<br>
-			  			{<br>
-			  		</p>
-			  		<p style="padding-left:100px;">
-			  			I am awesome!!<br> And stuff...<br>
-			  		</p>
-  			  		<p>		
-			  			<br>}<br>
-			  		</p>
-			  	</div>
-  			</div>
+		<script type="text/javascript">
+			function changeText(index)
+			{
+				if(index == 1){
+					document.getElementById("titletext").innerHTML = "void JoelAbney::myLanguage()<br>{";
+					document.getElementById("bodytext").innerHTML = 
+						"The first language that I studied was C and then C++ soon after . It is the language" +
+						"that I prefer, but lately, I have mostly been coding C# in Unity. "
+				}
+			}
+		
+		</script>
+		<div id="toptext">
+			<span> 
+			<font id="standard">GotoApps</font>&nbsp; &nbsp;
+			<a href="games.html" onmouseover="popupOn('1')" onmouseleave="popupOff('1')">*myGameApps,</a>
+			<a href="utilities.html" onmouseover="popupOn('2')" onmouseleave="popupOff('2')">*myUtilityApps,</a>
+			<a href="education.html" onmouseover="popupOn('3')" onmouseleave="popupOff('3')">*myEducationalApps,</a>
+		  	<a href="web.html" onmouseover="popupOn('4')" onmouseleave="popupOff('4')">*myWebProjects,</a>	
+		  	<a href="engine.html" onmouseover="popupOn('5')" onmouseleave="popupOff('5')">*myEngine;</a>	
+		  	</span>
 		</div>
-
+		<div id="toptext">
+			<span>
+			<font id="standard">DownloadScrips</font>&nbsp; &nbsp;
+			<a href="images/home/controller.png">*c++,</a>
+			<a href="images/home/controller.png">*c#,</a>
+			<a href="images/home/controller.png">*java,</a>
+		  	<a href="images/home/controller.png">*web,</a>	
+		  	<a href="images/home/controller.png">*python;</a>
+		  	</span>
+		</div>
+		<div id="banner">
+			<div id="banner-content">
+				<div id="popup1">				
+					<img src="images/home/controller.png" alt="Games" height="90px" width="90px" align="top" style="padding-top:25px;">
+				</div>	
+				<div id="popup2">				
+					<img src="images/home/tools.png" alt="Utility" height="75px" width="75px" align="top" style="">
+				</div>
+				<div id="popup3">				
+					<img src="images/home/owl.png" alt="Ed" height="72px" width="72px"  align="top" style="">
+				</div>
+				<div id="popup4">				
+					<img src="images/home/inet.png" alt="Web" height="72px" width="72px"  align="top" style="padding-top:16px">
+				</div>
+				<div id="popup5">				
+					<img src="images/home/cap.png" alt="School" height="90px" width="90px"  align="top" style="padding-top:20px;">
+				</div>	
+				<div id="popup6">				
+					<img src="images/home/c++.png" alt="vsC++" height="72px" align="bottom" style="">		
+				</div>	
+				<div id="popup7">				
+					<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
+				</div>
+				<div id="popup8">				
+					<img src="images/home/java3.png" alt="Java" height="72px" align="top" style="">
+				</div>
+				<div id="popup9">				
+					<img src="images/home/html.png" alt="JS" height="72px" align="top" style="">
+					<img src="images/home/javaservletjsp.png" alt="Servlet" height="72px" align="top" style="">	
+				</div>
+				<div id="popup10">				
+					<img src="images/home/python.png" alt="Python" height="72px" align="top" style="">
+				</div>		
+			</div>			
+		</div>
+		<div style="text-align:right;">
+			<a href="/resume">Home</a> 	
+		</div>
+		<div id="main-content">
+		  	<div style="background-image:url(images/home/bg1.png); width:100%;">		  		
+		  		<p id="titletext">
+		  			<font id="comment">// A brief summary of my experience</font><br>
+		  			<font id="standard">void</font>
+		  			<font id="variable">JoelAbney</font>
+		  			::aboutMe()<br>
+		  			{
+		  		</p>
+		  		<p id="bodytext" style="padding-left:80px;">
+		  			<font id="standard">string</font>
+		  			<font id="variable">experience_1</font> = 
+		  			<font id="string">"I worked as an intern for a children's game company called 
+		  			<a href="https://www.kadho.com/"><font color="white" size="6px">*Kadho</font></a>
+		  			in Irvine, CA, from August 2015 to December 2015. I mostly worked on an app in Unity3D called 
+		  			<a href="https://play.google.com/store/apps/details?id=com.Kadho.KCG.MK&hl=en">
+		  			<font color="white" size="6px">*Mochu's Kitchen</font></a>
+		  			, which is currently on Android and iOS."<br><br>
+		  			</font>
+		  			<font id="standard">string</font>
+		  			<font id="variable">experience_2</font> = 
+		  			<font id="string">"I was a Sergeant in the US army, which provided me with leadership skills and taught me about 
+		  			perseverance. Prior to that, I managed a variety of retail shops and restaurants for over 10 years. Because, of 
+		  			my ability to quickly adapt to new environments, I was successful in both my military and management careers, however,
+		  			I was never happy with what I was doing until I found programming."<br><br>
+		  			</font>
+		  			<font id="standard">string</font>
+		  			<font id="variable">summary</font> = 
+		  			<font id="string">"I began programming in 2009, just after my time in the military. In June 2016, I 
+		  			will receive my BS in Computer Science at the University of California, Irvine, currently
+		  			with a 3.910 GPA. My passion is making video games, but I am working on a couple of utility 
+		  			and educational applications as well. A few years ago I joined forces with an artist friend,
+		  			Frank Settle, and we created the company Random Sin Productions, to release our apps under.
+		  			I am currently looking for a career in the gaming industry and hope to start a new life soon 
+		  			after graduation. Click on the links above to see my projects or hover over the links below
+		  			to see images of the related material that I have knowledge of."
+		  			</font>		  			
+		  		</p>
+ 			  	<p>		
+		  			}<br>
+		  		</p>
+		  	</div>
+ 		</div>
+ 		 <div id="bottext">
+			<font id="standard">WorkingKnowlege &nbsp; &nbsp;</font>
+			<a onclick="changeText(0)" onmouseover="popupOn('12')" onmouseleave="popupOff('12')">language,</a> 	
+			<a onclick="changeText(0)" onmouseover="popupOn('13')" onmouseleave="popupOff('13')">ide,</a>
+			<a onclick="changeText(0)" onmouseover="popupOn('14')" onmouseleave="popupOff('14')">os,</a>
+		  	<a onclick="changeText(0)" onmouseover="popupOn('15')" onmouseleave="popupOff('15')">servers,</a>	
+		  	<a onclick="changeText(0)" onmouseover="popupOn('16')" onmouseleave="popupOff('16')">repository,</a>
+		  	<a onclick="changeText(0)" onmouseover="popupOn('17')" onmouseleave="popupOff('17')">database;</a>
+		</div>
+		<div id="banner">
+			<div id="banner-content">
+				<div id="popup12">				
+					<img src="images/home/c++.png" alt="vsC++" height="72px" align="bottom" style="">
+					<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
+					<img src="images/home/java3.png" alt="Java" height="72px" align="top" style="">
+					<img src="images/home/html.png" alt="JS" height="72px" align="top" style="">
+					<img src="images/home/python.png" alt="Python" height="72px" align="top" style="">
+					<img src="images/home/javaservletjsp.png" alt="Servlet" height="72px" align="top" style="">
+				</div>	
+				<div id="popup13">				
+					<img src="images/home/unity1.png" alt="Unity" height="72px" align="top" style="">
+					<img src="images/home/vs1.png" alt="VS" height="72px" align="top" style="">
+					<img src="images/home/monodevelop.png" alt="Mono" height="72px" align="top" style="">
+					<img src="images/home/eclipse1.png" alt="Eclipse" height="72px" align="top" style="">
+				</div>
+				<div id="popup14">				
+					<img src="images/home/win.png" alt="Windows" height="72px" align="top">
+					<img src="images/home/apple.png" alt="iOS" height="72px"  align="top">
+					<img src="images/home/ubuntu.png" alt="Ubuntu" height="72px"  align="top">
+				</div>
+				<div id="popup15">				
+					<img src="images/home/aws.png" alt="AWS" height="72px"  align="top">
+					<img src="images/home/tomcat.png" alt="Tomcat" height="72px"  align="top">
+				</div>
+				<div id="popup16">				
+					<img src="images/home/git.png" alt="Git" height="72px"  align="top">
+					<img src="images/home/github.png" alt="GitHub" height="72px"  align="top">
+					<img src="images/home/sourcetree.png" alt="SourceTree" height="72px"  align="top">
+					<img src="images/home/tortsvn2.png" alt="TortSVN" height="72px"  align="top">
+				</div>	
+				<div id="popup17">				
+					<img src="images/home/mysqlcircle.png" alt="MySQL" height="72px"  align="top">
+				</div>		
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,57 @@
+@CHARSET "ISO-8859-1";
+
+#main{
+
+}
+
+#redhare { 
+	display: none;
+}
+
+#monkey{
+	display: none;
+}
+
+#worm{
+	display: none;
+}
+
+#othello{
+	display: none;
+}
+
+#fabflix{
+	display: none;
+}
+
+#resume{
+	display: none;
+}
+
+#lefties{
+	display: none;
+}
+
+#images_hz {
+ 	width: 100%;
+	overflow: hidden;
+}
+
+#images_hz img {
+	height: 200px;
+	display: inline;
+	margin: 0 10px;.
+	border: 5px solid black;
+}
+
+#server{
+	display: none;
+}
+
+#aac{
+	display: none;
+}
+
+a{
+	cursor: pointer;
+}
