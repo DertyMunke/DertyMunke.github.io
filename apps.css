@@ -1,5 +1,10 @@
 @CHARSET "ISO-8859-1";
 
+body { 
+  	background: url(images/home/bg.jpg) no-repeat center left fixed; 
+  	background-size: cover;
+}
+
 #main{
 
 }
