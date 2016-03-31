@@ -32,6 +32,12 @@
 		<a onclick="changeBody('monkey')" onmouseover="popupOn('2')" onmouseleave="popupOff('2')">*monkeyStorm,</a>
 		<a onclick="changeBody('worm')" onmouseover="popupOn('3')" onmouseleave="popupOff('3')">*wormGame,</a>
 	  	<a onclick="changeBody('othello')" onmouseover="popupOn('4')" onmouseleave="popupOff('4')">*othello;</a>	
+	</div><br>
+	<div id="toptext">
+		<font id="standard">DownloadScripts</font> &nbsp; &nbsp;
+		<!-- <a href="scripts/cpp.zip" download onmouseover="popupOn('5')" onmouseleave="popupOff('5')">*redHareScripts,</a> -->
+		<a href="scripts/wormgame.zip" download onmouseover="popupOn('6')" onmouseleave="popupOff('6')">*wormScripts,</a>
+	  	<a href="scripts/python.zip" download onmouseover="popupOn('7')" onmouseleave="popupOff('7')">*othelloScripts;</a>	
 	</div>
 	<div id="banner">
 		<div id="banner-content">
@@ -46,7 +52,16 @@
 			</div>
 			<div id="popup4">				
 				<img src="images/games/othello.png" alt="vsC++" height="72px" align="bottom" style="">
-			</div>		
+			</div>	
+			<div id="popup5">				
+				<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
+			</div>
+			<div id="popup6">				
+				<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
+			</div>
+			<div id="popup7">				
+				<img src="images/home/python.png" alt="Python" height="72px" align="top" style="">
+			</div>
 		</div>			
 	</div>
 	<div style="text-align:right;">
@@ -103,7 +118,7 @@
 		  				I am happy to say that we have finally finished it, and we will begin promoting it at the brewery in the summer of 2016."<br><br>
 		  			</font>
 		  			<font id="standard">string</font>
-		  			<font id="variable">the_game</font> =	
+		  			<font id="variable">theGame</font> =	
 		  			<font id="string">
 		  				"You begin as a bartender and it is your first
 			  			day on the job. The customers come in and order beers and it is your job to get their order, pour the 
@@ -123,7 +138,7 @@
 		  		<p id="redhare2">
 		  			<font id="comment">// Screenshots of the main, beer tossing, scene.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">beer_toss</font> =
+		  			<font id="variable">beerToss</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/brew_order.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/brew_target.png" alt=""  />
@@ -133,7 +148,7 @@
 		  		<p>
 		  			<font id="comment">// Screenshots of the beer pong scene.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">beer_pong</font> =
+		  			<font id="variable">beerPong</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/brew_pong.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/brew_ponghim.png" alt=""  />
@@ -143,7 +158,7 @@
 		  		<p>
 		  			<font id="comment">// Screenshots of the flip cup scene.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">flip_cup</font> =
+		  			<font id="variable">flipCup</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/flip_start.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/flip_drink.png" alt=""  />
@@ -153,7 +168,7 @@
 		  		<p>
 		  			<font id="comment">// Screenshots of the strength punching game scene.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">punch_game</font> =
+		  			<font id="variable">punchGame</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/punch_bear.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/punch_bear2.png" alt=""  />
@@ -205,7 +220,7 @@
 						in such a short amount of time."<br><br>
 		  			</font>
 		  			<font id="standard">string</font>
-		  			<font id="variable">the_game</font> =	
+		  			<font id="variable">theGame</font> =	
 		  			<font id="string">
 		  				"You are a monkey named chacco and you start by collecting branches to build your home in the jungle.
 		  				There are evil monkeys that try to destroy you and your home and you have to pick up bananas to use as 
@@ -261,7 +276,7 @@
 				<p id="titletext">
 					<font id="comment">// The technical specs</font><br>
 					<font id="standard">void </font>
-		  			<font id="variable">Applications</font>::wormGame()<br>{
+		  			<font id="variable">Applications</font>::WormGame()<br>{
 				</p>
 		  		<p id="titletext" style="padding-left:80px;">	
 		  			<font id="standard">string</font>
@@ -294,7 +309,7 @@
 		  				of the Red Hare Bar app."<br><br>
 		  			</font>
 		  			<font id="standard">string</font>
-		  			<font id="variable">the_game</font> =	
+		  			<font id="variable">theGame</font> =	
 		  			<font id="string">
 		  				"You are a frog and your goals are simple; eat all of the flies before the centipede does, and avoid the centipede
 		  				at all costs."
@@ -308,7 +323,7 @@
 		  		<p id="worm2">
 		  			<font id="comment">// Screenshots of the prototype.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">screen_shots</font> =
+		  			<font id="variable">screenShots</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/worm_1.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/worm_2.png" alt=""  />
@@ -337,7 +352,7 @@
 				<p id="titletext">
 					<font id="comment">// The technical specs</font><br>
 					<font id="standard">void </font>
-		  			<font id="variable">Applications</font>::othello()<br>{
+		  			<font id="variable">Applications</font>::Othello()<br>{
 				</p>
 		  		<p id="titletext" style="padding-left:80px;">	
 		  			<font id="standard">string</font>
@@ -366,7 +381,7 @@
 		  				level sizes and rules."<br><br>
 		  			</font>
 		  			<font id="standard">string</font>
-		  			<font id="variable">the_game</font> =	
+		  			<font id="variable">theGame</font> =	
 		  			<font id="string">
 		  				"Just like the board game, try to take over the board with your colored pieces by jumping your opponent
 		  				and flipping their tiles."
@@ -380,7 +395,7 @@
 		  		<p id="othello2">
 		  			<font id="comment">// Screenshots of the Othello game.<br></font>
 		  			<font id="standard">Image</font>
-		  			<font id="variable">screen_shots</font> =
+		  			<font id="variable">screenShots</font> =
 		  		</p>
 		  		<img style="border: 5px solid black;" src="images/games/othello1.png" alt=""  /> 
 				<img style="border: 5px solid black;" src="images/games/othello2.png" alt=""  />
