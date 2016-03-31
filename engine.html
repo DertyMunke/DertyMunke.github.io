@@ -26,14 +26,25 @@
 	</script>
 	<div id="toptext">
 		<font id="standard">MyEngine</font> &nbsp; &nbsp;
-		<a onclick="changeBody('lefties')" onmouseover="popupOn('1')" onmouseleave="popupOff('1')">*sdl_engine;</a>	
-	</div>
+		<a onclick="changeBody('lefties')" onmouseover="popupOn('1')" onmouseleave="popupOff('1')">*sdlEngine;</a>	
+	</div><br>
+	<div id="toptext">
+		<span>
+			<font id="standard">DownloadScripts</font>&nbsp; &nbsp;
+			<a href="scripts/cpp.zip" download onmouseover="popupOn('2')" onmouseleave="popupOff('2')">*myEngineContribution;</a>
+		</span>
+	</div> 
 	<div id="banner">
 		<div id="banner-content">
 			<div id="popup1">				
 				<img src="images/engine/soldier.png" alt="logo" height="72px" align="bottom" style="">
 			</div>		
-		</div>			
+		</div>	
+		<div id="banner-content">
+			<div id="popup2">				
+				<img src="images/home/c++.png" alt="logo" height="72px" align="bottom" style="">
+			</div>		
+		</div>
 	</div>
 	<div style="text-align:right;">
 		<span>
@@ -48,14 +59,14 @@
 				<p>
 					<font id="comment">
 			  			/*<br>
-			  			SDL Engine has been canceled.<br>
+			  			SDL Engine was a class project and the group split after the quarter ended.<br>
 			  			*/<br>
 		  			</font>
 				</p>
 				<p id="titletext">
 					<font id="comment">// The technical specs</font><br>
 					<font id="standard">void </font>
-		  			<font id="variable">Applications</font>::sdl_engine()<br>{
+		  			<font id="variable">Applications</font>::sdlEngine()<br>{
 				</p>
 		  		<p id="titletext" style="padding-left:80px;">	
 		  			<font id="standard">string</font>
@@ -84,7 +95,7 @@
 		  				in a easier to read and use sound class. My sound scripts are downloadable from the C++ tab on the home page."<br><br>
 		  			</font>
 		  			<font id="standard">string</font>
-		  			<font id="variable">the_app</font> =	
+		  			<font id="variable">theApp</font> =	
 		  			<font id="string">
 		  				"The engine provides basic movement and collider functionality for building a 2D world. We created a demo game that shows off
 						the features, such as collision, sound, movement and sprite images. I implemented many sound options in the sound class and 
