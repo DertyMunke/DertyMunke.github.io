@@ -12,6 +12,7 @@
 		var thisgame = "";
 		function changeBody(index)
 		{
+			document.getElementById("intro").style.display = "none";
 			document.getElementById("redhare").style.display = "none";
 			document.getElementById("monkey").style.display = "none";
 			document.getElementById("worm").style.display = "none";
@@ -23,6 +24,11 @@
 		function jumpTo(index)
 		{
 			window.location.hash = thisgame + index;
+		}
+		
+		function resetIntro()
+		{
+			document.getElementById("intro").style.display = "block";
 		}
 	
 	</script>
@@ -72,18 +78,33 @@
 		</span>
 	</div>
 	<div id="main-content" style="padding-left: 0;">
+		<div id="intro" onload="resetIntro()">
+			<div>
+				<p>
+					<font id="comment">
+						/*<br>
+						Click one of the MyGames links above to see the details of that game.<br>	
+						*/
+					</font><br><br>
+				</p>
+			</div>
+		</div>
 		<div id="redhare">
 			<div>
 				<p>
 					<font id="comment">
 			  			/*<br>
-			  			Red Hare Bar is currently in closed beta on Google Play and iTunes. A final version is complete, 
-						but waiting on legal documents before being released to the public.<br>
-			  			Try it now by signing up for beta testing at		 			
-			  			<a href="http://www.randomsinproductions.com/contact-us/" target="_blank"><font color="white" size="6px">
-			  				*randomsinproductions.com/contact-us/</font></a><br>
-			  			*/<br>
-		  			</font>
+			  			Red Hare Bar is currently on 
+						<a href="https://play.google.com/store/apps/details?id=com.RandomSin.BrewApp&hl=en" 
+							target="_blank"><font color="white" size="6px">*Google Play</font></a>
+						and the 
+						<a href="https://itunes.apple.com/us/app/red-hare-games/id1050471548?mt=8" target="_blank"><font color="white" size="6px">
+			  				*iTunes Play Store.</font></a><br>
+			  			Try it now by clicking the links above and you can leave us feedback at 
+						<a href="http://randomsinproductions.com" target="_blank"><font color="white" size="6px">
+			  				*randomsinproductions.com.</font></a>	
+						*/
+		  			</font><br><br>
 				</p>
 				<p id="titletext">
 					<font id="comment">// The technical specs</font><br>
