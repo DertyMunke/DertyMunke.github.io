@@ -13,6 +13,7 @@
 		function changeBody(index)
 		{
 			document.getElementById("server").style.display = "none";
+			document.getElementById("intro").style.display = "none";
 			
 			thisgame = "#" + index;
 			document.getElementById(index).style.display = "block";
@@ -21,6 +22,11 @@
 		function jumpTo(index)
 		{
 			window.location.hash = thisgame + index;
+		}
+		
+		function resetIntro()
+		{
+			document.getElementById("intro").style.display = "block";
 		}
 	
 	</script>
@@ -52,6 +58,15 @@
 		</span>
 	</div>
 	<div id="main-content" style="padding-left: 0;">
+		<div id="intro" onload="resetIntro()">
+			<p>
+				<font id="comment">
+					/*<br>
+					Click one of the MyUtilities links above to see the details of that utility app.<br>	
+					*/
+				</font><br><br>
+			</p>			
+		</div>
 		<div id="server">
 			<div>
 				<p>

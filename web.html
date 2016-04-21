@@ -14,6 +14,7 @@
 		{
 			document.getElementById("fabflix").style.display = "none";
 			document.getElementById("resume").style.display = "none";
+			document.getElementById("intro").style.display = "none";
 			
 			thisgame = "#" + index;
 			document.getElementById(index).style.display = "block";
@@ -22,6 +23,11 @@
 		function jumpTo(index)
 		{
 			window.location.hash = thisgame + index;
+		}
+		
+		function resetIntro()
+		{
+			document.getElementById("intro").style.display = "block";
 		}
 	
 	</script>
@@ -56,6 +62,15 @@
 		</span>
 	</div>
 	<div id="main-content" style="padding-left: 0;">
+		<div id="intro" onload="resetIntro()">
+			<p>
+				<font id="comment">
+					/*<br>
+					Click one of the MyWeb links above to see the details of that website.<br>	
+					*/
+				</font><br><br>
+			</p>			
+		</div>
 		<div id="fabflix">
 			<div>
 				<p>
