@@ -1,181 +1,70 @@
 <!DOCTYPE html>
 <html>
-<Style>
-
-body { 
-  	background: url(images/home/me1.png) no-repeat center left fixed; 
-  	background-size: cover;
-}
-
-</Style>
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Joel's Home</title>
-		<link rel="stylesheet" type="text/css" href="topbanner.css" media="screen" />
-		<script src="scripts.js" type="text/javascript"></script>
-	</head>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Indie%20Flower">
+		<link rel="stylesheet" type="text/css" href="./css/maincss.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="./css/home.css" media="screen" />
+		<script src="./js/mainjs.js" type="text/javascript"></script>
+</head>
 	<body>
-		<script type="text/javascript">
-			function changeText(index)
-			{
-				if(index == 1){
-					document.getElementById("titletext").innerHTML = "void JoelAbney::myLanguage()<br>{";
-					document.getElementById("bodytext").innerHTML = 
-						"The first language that I studied was C and then C++ soon after . It is the language" +
-						"that I prefer, but lately, I have mostly been coding C# in Unity. "
-				}
-			}
-		
-		</script>
-		<div id="toptext">
-			<span> 
-			<font id="standard">GotoApps</font>&nbsp; &nbsp;
-			<a href="games.html" onmouseover="popupOn('1')" onmouseleave="popupOff('1')">*myGameApps,</a>
-			<a href="utilities.html" onmouseover="popupOn('2')" onmouseleave="popupOff('2')">*myUtilityApps,</a>
-			<a href="education.html" onmouseover="popupOn('3')" onmouseleave="popupOff('3')">*myEducationalApps,</a>
-		  	<a href="web.html" onmouseover="popupOn('4')" onmouseleave="popupOff('4')">*myWebProjects,</a>	
-		  	<a href="engine.html" onmouseover="popupOn('5')" onmouseleave="popupOff('5')">*myEngine;</a>	
-		  	</span>
-		</div><br>
-		<div id="toptext">
-			<span>
-			<font id="standard">DownloadScripts</font>&nbsp; &nbsp;
-			<a href="scripts/cpp.zip" download onmouseover="popupOn('6')" onmouseleave="popupOff('6')">*c++,</a>
-			<a href="scripts/csharp.zip" download onmouseover="popupOn('7')" onmouseleave="popupOff('7')">*c#,</a>
-			<a href="scripts/java.zip" download onmouseover="popupOn('8')" onmouseleave="popupOff('8')">*java,</a>
-		  	<a href="scripts/web.zip" download onmouseover="popupOn('9')" onmouseleave="popupOff('9')">*web,</a>	
-		  	<a href="scripts/python.zip" download onmouseover="popupOn('10')" onmouseleave="popupOff('10')">*python;</a>
-		  	</span>
+<!-- Nav Bar -->
+		<div>
+			<ul class="nav-top" style="margin-top: -125px;">
+				<li class="nav-link-left">
+					<ul class="nav-top-dropdown">
+						<li><a class="button" href="index.html"><span>Home</span></a></li>
+					</ul>
+				</li>
+				<li class="nav-link-left">
+					<ul class="nav-top-dropdown">
+						<li><a class="button" href="./html/about.html"><span>About</span></a></li>
+					</ul>
+				</li>
+				<li class="nav-link-right">
+					<ul class="nav-top-dropdown">
+						<li><a class="button" href="./html/about.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+							<span>Web</span></a></li>
+						<li><a class="button dropdown2" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+							<span>Fabflix</span></a></li>
+						<li><a class="button dropdown2 last-dropdown" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+							<span>Portfolio</span></a></li>
+					</ul>
+				</li>
+				<li class="nav-link-right">
+					<ul class="nav-top-dropdown">
+						<li><a class="button" href="./html/aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
+							<span>Education</span></a></li>
+						<li><a class="button dropdown3 last-dropdown" href="./html/aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
+							<span>AAC Speech</span></a></li>
+					</ul>
+				</li>
+				<li class="nav-link-right">
+					<ul class="nav-top-dropdown">
+						<li><a class="button" href="./html/server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
+							<span>Utility</span></a></li>
+						<li><a class="button dropdown4 last-dropdown" href="./html/server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
+							<span>Server Pro </span></a></li>
+					</ul>
+				</li>
+				<li class="nav-link-right">
+					<ul class="nav-top-dropdown" style="position:relative;">
+						<li ><a class="button" href="./html/games.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+							<span>Games</span></a></li>
+						<li><a class="button dropdown5" href="./html/redhare.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+							<span>Red Hare Games </span></a></li>
+						<li><a class="button dropdown5" href="./html/monkey.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+							<span>Monkey Storm</span></a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
-		<div id="banner">
-			<div id="banner-content">
-				<div id="popup1">				
-					<img src="images/home/controller.png" alt="Games" height="90px" width="90px" align="top" style="padding-top:25px;">
-				</div>	
-				<div id="popup2">				
-					<img src="images/home/tools.png" alt="Utility" height="75px" width="75px" align="top" style="">
-				</div>
-				<div id="popup3">				
-					<img src="images/home/owl.png" alt="Ed" height="72px" width="72px"  align="top" style="">
-				</div>
-				<div id="popup4">				
-					<img src="images/home/inet.png" alt="Web" height="72px" width="72px"  align="top" style="padding-top:16px">
-				</div>
-				<div id="popup5">				
-					<img src="images/home/engine.png" alt="Engine" height="65px" width="90px"  align="top" style="padding-top:16px;">
-				</div>	
-				<div id="popup6">				
-					<img src="images/home/c++.png" alt="vsC++" height="72px" align="bottom" style="">		
-				</div>	
-				<div id="popup7">				
-					<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
-				</div>
-				<div id="popup8">				
-					<img src="images/home/java3.png" alt="Java" height="72px" align="top" style="">
-				</div>
-				<div id="popup9">				
-					<img src="images/home/html.png" alt="JS" height="72px" align="top" style="">
-					<img src="images/home/javaservletjsp.png" alt="Servlet" height="72px" align="top" style="">	
-				</div>
-				<div id="popup10">				
-					<img src="images/home/python.png" alt="Python" height="72px" align="top" style="">
-				</div>		
-			</div>			
-		</div>
-		<div style="text-align:right;">
-			<a href="http://joelabney.com">Home</a> 	
-		</div>
-		<div id="main-content">
-		  	<div style="width:100%;">		  		
-		  		<p id="titletext">
-		  			<font id="comment">// A brief summary of my experience</font><br>
-		  			<font id="standard">void</font>
-		  			<font id="variable">JoelAbney</font>
-		  			::aboutMe()<br>
-		  			{
-		  		</p>
-		  		<p id="bodytext" style="padding-left:80px;">
-					<font id="standard">string</font>
-		  			<font id="variable">summary</font> = 
-		  			<font id="string">"In June 2016, I 
-		  			will receive my BS in Computer Science with Visual Computing and Networking specializations, at the University of California, 
-					Irvine, currently with a 3.920 GPA. My passion is making video games, but I am working on a couple of utility 
-		  			and educational applications as well. A few years ago I joined forces with an artist friend,
-		  			Frank Settle, and we founded the company Random Sin Productions as a way of legitamizing our hard work. 
-					We just released our first app on Google Play and the iOS Play Store, titled "Red Hare Bar."
-		  			I am currently looking for a career in the gaming industry and excited about starting my new life 
-		  			after graduation. Click on the links above to see my projects or hover over the links below
-		  			to see logos related to the material that I have knowledge of."
-		  			</font><br><br>
-		  			<font id="standard">string</font>
-		  			<font id="variable">experience_1</font> = 
-		  			<font id="string">"Worked as an intern for  
-		  			<a href="https://www.kadho.com/" target="_blank"><font color="white" size="6px">*Kadho</font></a>
-					, a children's educational game company in Irvine, CA, from August 2015 to December 2015. My knowlege of Unity 
-					and ability to solve problems opened the door for me to be the main software engineer on an app titled 
-		  			<a href="https://play.google.com/store/apps/details?id=com.Kadho.KCG.MK&hl=en" target="_blank">
-		  			<font color="white" size="6px">*Mochu's Kitchen</font></a>
-		  			, which is currently on Android and iOS."
-		  			</font><br><br>
-		  			<font id="standard">string</font>
-		  			<font id="variable">experience_2</font> = 
-		  			<font id="string">"As Sergeant in the US army, I learned how to lead a team of men, that your limitations are in your mind
-					and with determination, hard work and preserverence you can almost always overcome those obsticles. 
-		  			Prior to that, I managed a variety of retail shops and restaurants for over 10 years. Because, of 
-		  			my ability to quickly adapt to new environments, I was successful in both my military and management careers. I have
-					truly enjoyed the process of learning to be a software engineer and I look forward to my future challenges and to continue
-					educating myself in my chosen craft."
-		  			</font><br><br>	  			
-		  		</p>
- 			  	<p>		
-		  			}<br>
-		  		</p>
-		  	</div>
- 		</div>
- 		 <div id="bottext">
-			<font id="standard">WorkingKnowlege &nbsp; &nbsp;</font>
-			<a onclick="changeText(0)" onmouseover="popupOn('12')" onmouseleave="popupOff('12')">language,</a> 	
-			<a onclick="changeText(0)" onmouseover="popupOn('13')" onmouseleave="popupOff('13')">ide,</a>
-			<a onclick="changeText(0)" onmouseover="popupOn('14')" onmouseleave="popupOff('14')">os,</a>
-		  	<a onclick="changeText(0)" onmouseover="popupOn('15')" onmouseleave="popupOff('15')">servers,</a>	
-		  	<a onclick="changeText(0)" onmouseover="popupOn('16')" onmouseleave="popupOff('16')">repository,</a>
-		  	<a onclick="changeText(0)" onmouseover="popupOn('17')" onmouseleave="popupOff('17')">database;</a>
-		</div>
-		<div id="banner">
-			<div id="banner-content">
-				<div id="popup12">				
-					<img src="images/home/c++.png" alt="vsC++" height="72px" align="bottom" style="">
-					<img src="images/home/csharp.png" alt="C#" height="72px" align="top" style="">
-					<img src="images/home/java3.png" alt="Java" height="72px" align="top" style="">
-					<img src="images/home/html.png" alt="JS" height="72px" align="top" style="">
-					<img src="images/home/python.png" alt="Python" height="72px" align="top" style="">
-					<img src="images/home/javaservletjsp.png" alt="Servlet" height="72px" align="top" style="">
-				</div>	
-				<div id="popup13">				
-					<img src="images/home/unity1.png" alt="Unity" height="72px" align="top" style="">
-					<img src="images/home/vs1.png" alt="VS" height="72px" align="top" style="">
-					<img src="images/home/monodevelop.png" alt="Mono" height="72px" align="top" style="">
-					<img src="images/home/eclipse1.png" alt="Eclipse" height="72px" align="top" style="">
-				</div>
-				<div id="popup14">				
-					<img src="images/home/win.png" alt="Windows" height="72px" align="top">
-					<img src="images/home/apple.png" alt="iOS" height="72px"  align="top">
-					<img src="images/home/ubuntu.png" alt="Ubuntu" height="72px"  align="top">
-				</div>
-				<div id="popup15">				
-					<img src="images/home/aws.png" alt="AWS" height="72px"  align="top">
-					<img src="images/home/tomcat.png" alt="Tomcat" height="72px"  align="top">
-				</div>
-				<div id="popup16">				
-					<img src="images/home/git.png" alt="Git" height="72px"  align="top">
-					<img src="images/home/github.png" alt="GitHub" height="72px"  align="top">
-					<img src="images/home/sourcetree.png" alt="SourceTree" height="72px"  align="top">
-					<img src="images/home/tortsvn2.png" alt="TortSVN" height="72px"  align="top">
-				</div>	
-				<div id="popup17">				
-					<img src="images/home/mysqlcircle.png" alt="MySQL" height="72px"  align="top">
-				</div>		
-			</div>
-		</div>
+<!-- End Nav Bar -->
+		<p class="mytext top-text"> Joel Abney </p>
+		<p class="mytext bot-text">
+			Programmer - Designer - Developer </br>
+			& Creator of things that do stuff.
+		</p>	
 	</body>
 </html>

@@ -1,0 +1,25 @@
+/* HOME PAGE CSS */
+
+body{
+	background: url(../images/home_img.jpg) no-repeat center fixed; 
+  	background-size: cover;
+    margin:0;
+	min-width: 786px;
+	font-family: Indie Flower;
+}
+
+.mytext{	
+	font-size: 250%;
+	color: white;
+	text-align: center;
+}
+
+.top-text{
+	margin-top: 125px;
+}
+
+.bot-text{
+	position:absolute;
+	bottom:0;
+	width: 100%;
+}
