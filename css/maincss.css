@@ -60,6 +60,23 @@
 .nav-link-left{
 	float: left;
 }
+.about{
+	color: #D8D8D8;
+	font-size: 30px;
+	margin-top: -20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.fun{
+	color: #D8D8D8;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.fun img{
+	width: 786px;
+}
 
 a{
 	color: #9F81F7;
