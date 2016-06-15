@@ -4,7 +4,6 @@
 	text-decoration: none;
 	width: 130px;
 	background-color: #262626;
-	border-left: thin solid black;
 	color: white;
 	text-align: center;
 	font-size: 15px;
@@ -16,10 +15,6 @@
 
 .button:hover {
 	background-color: #404040;
-}
-
-.top-btn{
-
 }
 
 .dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5{
@@ -43,6 +38,7 @@
 }
 
 .nav-top {
+	margin-top: -200px;
 	background-color: #262626;
 	border-bottom: thin solid white;
 	min-width: 786px;
@@ -73,6 +69,10 @@
 
 .fun img{
 	width: 786px;
+}
+
+.flower-text{
+	font-family: Indie Flower;
 }
 
 a{

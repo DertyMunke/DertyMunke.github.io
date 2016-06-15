@@ -4,7 +4,7 @@ body{
   	background-size: cover;
     margin:0;
 	min-width: 800px;
-	font-family: Indie Flower;
+	font-family: Verdona;
 }
 
 section{
@@ -23,6 +23,7 @@ section{
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
 	margin-left: 50px;
+	font-family: Indie Flower;
 }
 
 .mobile img{
