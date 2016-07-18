@@ -14,6 +14,7 @@ section{
 
 .image1{
 	width: 400px;
+	height: 512px;
 	float: left;
 }
 
@@ -36,3 +37,4 @@ section{
 .div-spacer{
 	margin-top: 50px;
 }
+
