@@ -15,17 +15,17 @@
 			<ul class="nav-top">
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="../index.html"><span>Home</span></a></li>
+						<li><a class="button nav-top-active" href="../index.html"><span>Home</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="about.html"><span>About</span></a></li>
+						<li><a class="button nav-top-active" href="about.html"><span>About</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="web.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Web</span></a></li>
 						<li><a class="button dropdown2" href="fabflix.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Fabflix</span></a></li>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>Education</span></a></li>
 						<li><a class="button dropdown3 last-dropdown" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>AAC Speech</span></a></li>
@@ -43,7 +43,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Utility</span></a></li>
 						<li><a class="button dropdown4 last-dropdown" href="server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Server Pro </span></a></li>
@@ -51,7 +51,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown" style="position:relative;">
-						<li ><a class="button" href="games.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+						<li ><a class="button" href="" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Games</span></a></li>
 						<li><a class="button dropdown5" href="redhare.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Red Hare Games </span></a></li>
@@ -63,19 +63,19 @@
 		</div>
 <!-- INTRO -->
 		<section>
+			<div class="jump"><a href="#images">Screenshots</a></div>
 			<div>
 				<img class="image1" src="../images/education/sa2_logo.png" alt="AAC Logo" > 
 				<div>
 					<h1 class="title-text">AAC Application</h1></br>
 					<p class="about">
-						AAC is an augmentative and alternative communication app, to help with speech and language development. We,
-						<a href="http://www.randomsinproductions.com" target="_blank">Random Sin Productions</a> 
-						have teamed up with a Speech Pathologist at
+						AAC is an augmentative and alternative communication app, to help with speech and language development. I 
+						teamed up with a Speech Pathologist at
 						<a href="http://www.speechabilities.com" target="_blank">Speech Abilities</a>
-						and have custom made the application according to her specifications. The design and most of the functionality 
-						is complete, but production has been halted due to a wait on the contracted artist assets. There are over a thousand
-						images that need to be complete and then organized by the speech pathologist into different levels of functioning patients 
-						that will benifit from using the app. Once the assets and functional design have been complete, we will continue production. 
+						and custom made the application according to her specifications. The app was designed in Unity3D and scripting was done in C#. 
+						The user can create an account to have their custom layouts backed up in an Amazon AWS instance, running Tomcat, MySql, and
+						a Java Servlet web app for the backend. This app will begin beta testing once all of the outsourced image assets are received
+						and implemented into the project. 
 					</p>
 				</div>
 			</div>
@@ -103,7 +103,7 @@
 				</p>
 			</div>
 		</section>
-		<section class="vert-image">
+		<section class="vert-image" id="images">
 			<h1 class="title-text">Screenshots</h1></br>
 			<div>
 				<h1 class="about">Main Setup and Options</h1>

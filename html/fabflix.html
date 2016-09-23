@@ -15,17 +15,17 @@
 			<ul class="nav-top">
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="../index.html"><span>Home</span></a></li>
+						<li><a class="button nav-top-active" href="../index.html"><span>Home</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="about.html"><span>About</span></a></li>
+						<li><a class="button nav-top-active" href="about.html"><span>About</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="about.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Web</span></a></li>
 						<li><a class="button dropdown2" href="fabflix.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Fabflix</span></a></li>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>Education</span></a></li>
 						<li><a class="button dropdown3 last-dropdown" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>AAC Speech</span></a></li>
@@ -43,7 +43,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="web.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Utility</span></a></li>
 						<li><a class="button dropdown4 last-dropdown" href="server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Server Pro </span></a></li>
@@ -51,7 +51,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown" style="position:relative;">
-						<li ><a class="button" href="games.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+						<li ><a class="button" href="" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Games</span></a></li>
 						<li><a class="button dropdown5" href="redhare.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Red Hare Games </span></a></li>
@@ -63,19 +63,21 @@
 		</div>
 <!-- INTRO -->
 		<section>
+			<div class="jump"><a href="https://52.36.234.178:8443/fabflix" target="_blank">Fabflix Link</a></div>
 			<div>
 				<img class="image1" src="../images/web/ff2_logo.png" alt="Red Hare Logo" > 
 				<div>
-					<h1 class="title-text">Fabflix Website</h1></br>
+					<h1 class="title-text">Fabflix Webapp</h1></br>
 					<p class="about">
-						This was an ecommerse website that I did for a upper division class at the University of California, Irvine. It is a mock website
-						that sells dvd's that are stored in a MySql database. It is the first webproject that I have done, so there are some flaws in the scripting,
-						such as commenting  and organizing of the code. Instead of fixing it, I am currently working on another mock ecommerse site for another class
-						which I am building on the skills that I developed by doing this site and keeping the code clean and organized. I have this site up, only because 
-						it shows my exposure to HTML, CSS, JS, JSP's, Servlets, Java, Apache, Tomcat, and MySql. It will come down once I have completed my current project, but if you 
-						would like to check it out click on the following link,
-						<a href="https://52.36.234.178:8443/fabflix" target="_blank">Fabflix Website</a>.
-						Also, it is set up for a secure connection, so you will have to click "continue to this website," on the page that pops up prior. 
+						Fabflix is a mock ecommerse website that sells dvd's which are stored in a MySql database, in an AWS instance running Tomcat, and the 
+						web app was designed in Eclipse using Java Servlets along with JSP's, AJAX, JS, CSS, and HTML. This is the first web project that I 
+						have worked on, so there are many flaws, such as commenting, security and organizing of the code. Fabflix was my introduction to web
+						based projects and I learned how to use a variety of techniques, among these are iframes, sychronous and asychronous database queries, 
+						seperating CSS and JS from HTML, using JS for dynamic web pages, setting up HTTPS, and much more. Follow the link to view the web app, 
+						<a href="https://52.36.234.178:8443/fabflix" target="_blank">Fabflix Link.</a>	
+						</br></br>
+						<span style="color:red">Known issue:</span> The initial press of a link does not fetch the DVD's from the database. You have to wait 
+						a second and press the link again.				
 					</p>
 				</div>
 			</div>

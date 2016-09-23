@@ -15,17 +15,17 @@
 			<ul class="nav-top">
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="../index.html"><span>Home</span></a></li>
+						<li><a class="button nav-top-active" href="../index.html"><span>Home</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-left">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="about.html"><span>About</span></a></li>
+						<li><a class="button nav-top-active" href="about.html"><span>About</span></a></li>
 					</ul>
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="web.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Web</span></a></li>
 						<li><a class="button dropdown2" href="fabflix.html" onmouseover="expandButtons('dropdown2')" onmouseout="contractButtons('dropdown2')">
 							<span>Fabflix</span></a></li>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>Education</span></a></li>
 						<li><a class="button dropdown3 last-dropdown" href="aac.html" onmouseover="expandButtons('dropdown3')" onmouseout="contractButtons('dropdown3')">
 							<span>AAC Speech</span></a></li>
@@ -43,7 +43,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown">
-						<li><a class="button" href="server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
+						<li><a class="button" href="" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Utility</span></a></li>
 						<li><a class="button dropdown4 last-dropdown" href="server.html" onmouseover="expandButtons('dropdown4')" onmouseout="contractButtons('dropdown4')">
 							<span>Server Pro </span></a></li>
@@ -51,7 +51,7 @@
 				</li>
 				<li class="nav-link-right">
 					<ul class="nav-top-dropdown" style="position:relative;">
-						<li ><a class="button" href="games.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
+						<li ><a class="button" href="" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Games</span></a></li>
 						<li><a class="button dropdown5" href="redhare.html" onmouseover="expandButtons('dropdown5')" onmouseout="contractButtons('dropdown5')">
 							<span>Red Hare Games </span></a></li>
@@ -63,20 +63,20 @@
 		</div>
 <!-- INTRO -->
 		<section>
+			<div class="jump"><a href="#images">Screenshots</a></div>
 			<div>
 				<img class="image1" src="../images/utility/server_logo.png" alt="Red Hare Logo" > 
 				<div>
-					<h1 class="title-text">Server Pro 1.0</h1></br>
+					<h1 class="title-text">Server Pro</h1></br>
 					<p class="about">
-						An app to help professionals in the service industry keep track of their tips, tipouts, and more. 
+						Server Pro is an app to help professionals in the service industry keep track of their tips, tipouts, and more. 
 						We started working on this project at
 						<a href="http://www.randomsinproductions.com" target="_blank">Random Sin Productions</a>
 						a little over a year ago, when we were nearing the end of our first project, 
 						<a href="redhare.html" target="_blank">Red Hare Games</a>. 
-						Initially, we made a concept prototype and pitched it to my partners service industry colleagues, as well as a contact who is
-						currently working on a POS (point of sale) application. After receiving positive feedback on our concept, we began implementation 
-						of the final design, making changes based on the feedback from the process. This app is currently in production and is scheduled to 
-						release in September 2016.
+						Server Pro is currently on Google Play and iOS, in beta testing. We designed it in Unity3D using C#, and we are finalizing
+						the app features now by adding an Amazon AWS instance with a MySql database, used to backup the users input data. I am using 
+						Eclipse to design the backend with Java and Java Servlets, so the app can communicate with the server.						
 					</p>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 					and look at the year-to-date, monthly, daily, and am or pm shifts for a single job, or combine the profiles for a quick view of your total earnings
 					in any of these time frames, as well as custom time frames. The app provides an easy way to send text confirmation to the receiver of a tipout and 
 					records their name and tipped out total for future lookup. Also, after you enter your daily figures, your percentages, tipouts, and totals are all
-					calculated for you and displayed for you to reveiw.
+					calculated for you and displayed for you to review.
 				</p>
 			</div>
 		</section>
@@ -104,7 +104,7 @@
 				</p>
 			</div>
 		</section>
-		<section class="mobile">
+		<section class="mobile" id="images">
 			<h1 class="title-text">Screenshots</h1></br>
 			<div>
 				<h1 class="about">Main Menu</h1>

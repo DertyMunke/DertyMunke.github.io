@@ -13,10 +13,6 @@
 	cursor: pointer;
 }
 
-.button:hover {
-	background-color: #404040;
-}
-
 .dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5{
 	display: none;	
 	border-left: thin solid white;
@@ -31,6 +27,11 @@
 
 .dropdown1:hover, .dropdown2:hover, .dropdown3:hover, .dropdown4:hover, .dropdown5:hover{
 	display: inline-block;
+	background-color: #404040;
+}
+
+.nav-top-active:hover {
+	background-color: #404040;
 }
 
 .nav-top-dropdown{
